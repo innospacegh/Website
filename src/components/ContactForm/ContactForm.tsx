@@ -10,7 +10,7 @@ type ContactFormProps = {
 }
 
 const ContactFormContainer = styled.form`
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     flex-basis: 600px;
     flex-grow: 1;
     padding: 1rem;

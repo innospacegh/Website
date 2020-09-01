@@ -31,7 +31,7 @@ const ContactContent = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 `
 
 const ContactImage = styled.div`

@@ -15,8 +15,9 @@ const ContactCards = styled.div`
 
 const ContactCard = styled.div`
     width: 280px;
+    margin: 1rem 0;
     padding: 1rem;
-    border: 1px solid #44ce6f;
+    background-color: hsla(160, 50%, 50%, 0.1);
     border-radius: 6px;
     text-align: center;
     display: flex;
@@ -33,28 +34,31 @@ const ContactIcon = styled.div`
         fill: hsl(160, 50%, 50%);
         stroke: hsl(160, 50%, 50%);
     }
-    border: 1px solid white;
+    /* border: 1px solid white; */
 `
 
 const ContactCardName = styled.h4`
-    color: hsl(160, 50%, 50%);
+    color: hsla(160, 90%, 20%, 1);
+    font-size: 20px;
+    margin-top: 1rem;
 `
 
 const ContactList = styled.ul`
     padding: 0;
     text-align: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 `
 
 const ContactItem = styled.li`
     list-style: none;
-    padding: 0.3rem;
+    padding: 0.3rem 0;
     font-family: ${props => props.theme.typography.altFont};
     font-size: 18px;
 `
 
 const ContactLink = styled.a`
     text-decoration: none;
+    color: hsl(249.3, 88%, 40%);
 `
 
 const ContactDetails: React.FC = () => {

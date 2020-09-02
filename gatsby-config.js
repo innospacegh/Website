@@ -57,6 +57,26 @@ module.exports = {
                         baseId: process.env.AIRTABLE_BASE_ID,
                         tableName: "Social",
                     },
+                    {
+                        baseId: process.env.AIRTABLE_BASE_ID,
+                        tableName: "Open Desk",
+                    },
+                    {
+                        baseId: process.env.AIRTABLE_BASE_ID,
+                        tableName: "Open Memberships",
+                    },
+                    {
+                        baseId: process.env.AIRTABLE_BASE_ID,
+                        tableName: "Private Office",
+                    },
+                    {
+                        baseId: process.env.AIRTABLE_BASE_ID,
+                        tableName: "Meeting Room",
+                    },
+                    {
+                        baseId: process.env.AIRTABLE_BASE_ID,
+                        tableName: "Multipurpose Centre",
+                    },
                 ],
             },
         },

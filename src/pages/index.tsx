@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -24,16 +24,23 @@ const Header = styled.header`
     align-items: center;
 `
 
-const IndexPage: React.FC = () => (
-    <Layout>
-        <SEO title="Home" />
-        <Header>
-            <Hero />
-        </Header>
-        <Spaces />
-        <ContactUs />
-        <Map />
-    </Layout>
-)
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
+
+const IndexPage: React.FC = () => {
+    const mapRef = useRef(null)
+    const executeScroll = () => scrollToRef(mapRef)
+
+    return (
+        <Layout>
+            <SEO title="Home" />
+            <Header>
+                <Hero scrollToMap={executeScroll} />
+            </Header>
+            <Spaces />
+            <ContactUs />
+            <Map mapRef={mapRef} />
+        </Layout>
+    )
+}
 
 export default IndexPage

@@ -5,6 +5,10 @@ import { graphql, useStaticQuery } from "gatsby"
 import InnerContainer from "../InnerContainer/InnerContainer"
 import Button from "../Button/Button"
 
+type HeroProps = {
+    scrollToMap?: any
+}
+
 const HeroContainer = styled(InnerContainer)`
     text-align: center;
 `
@@ -55,20 +59,8 @@ const HeroButton = styled(Button)`
         color: white;
     }
 `
-// const query = graphql`
-//     query {
-//         allAirtable(filter: {table: {eq: "Hero"}}) {
-//             nodes {
-//                 data {
-//                     Notes
-//                     Name
-//                 }
-//             }
-//         }
-//     }
-// `
 
-const Hero: React.FC = () => {
+const Hero: React.FC<HeroProps> = ({ scrollToMap }) => {
     const heroData = useStaticQuery(
         graphql`
             query {
@@ -91,7 +83,7 @@ const Hero: React.FC = () => {
             <HeroSubtitle>
                 {heroData.allAirtable.nodes[0].data.Sub}
             </HeroSubtitle>
-            <HeroButton>Visit Us!</HeroButton>
+            <HeroButton onClick={scrollToMap}>Visit Us!</HeroButton>
         </HeroContainer>
     )
 }

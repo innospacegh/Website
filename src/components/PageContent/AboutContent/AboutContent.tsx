@@ -31,7 +31,10 @@ const AboutContent: React.FC = () => {
     const aboutData = useStaticQuery(
         graphql`
             query {
-                allAirtable(filter: { table: { eq: "About" } }) {
+                allAirtable(
+                    filter: { table: { eq: "About" } }
+                    sort: { fields: id }
+                ) {
                     nodes {
                         id
                         data {

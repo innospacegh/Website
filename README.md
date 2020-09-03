@@ -6,3 +6,5 @@
 <h1 align="center">
   InnoSpace Website
 </h1>
+
+Built by [knada](http://github.com/knada) with React, Gatsby, Typescript and Airtable.

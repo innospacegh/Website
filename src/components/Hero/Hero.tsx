@@ -11,6 +11,7 @@ type HeroProps = {
 
 const HeroContainer = styled(InnerContainer)`
     text-align: center;
+    margin: auto;
 `
 
 const HeroHeading = styled.h1`

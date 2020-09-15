@@ -7,4 +7,4 @@
   InnoSpace Website
 </h1>
 
-Built by [knada](http://github.com/knada) with React, Gatsby, Typescript and Airtable.
+Built by [knada](http://github.com/knada) with React, Gatsby, Typescript, Styled Components and Airtable.

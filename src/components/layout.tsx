@@ -1,6 +1,5 @@
 import React from "react"
-import { ThemeProvider, createGlobalStyle } from "styled-components"
-import Helmet from "react-helmet"
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 
 import theme from "../theme"
 import MainNav from "./MainNav/MainNav"
@@ -15,7 +14,12 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', Arial, Helvetica, sans-serif;
         font-style: normal;
         text-rendering: optimizeLegibility;
+        scroll-behavior: smooth;
     }
+`
+
+const Main = styled.main`
+    scroll-behavior: smooth;
 `
 
 type LayoutProps = {
@@ -27,18 +31,8 @@ const Layout: React.FC = ({ children }: LayoutProps) => {
         <ThemeProvider theme={theme}>
             <>
                 <GlobalStyles />
-                <Helmet>
-                    <link
-                        href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
-                        rel="stylesheet"
-                    />
-                    <link
-                        href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap"
-                        rel="stylesheet"
-                    />
-                </Helmet>
                 <MainNav />
-                <main>{children}</main>
+                <Main>{children}</Main>
                 <Footer />
             </>
         </ThemeProvider>

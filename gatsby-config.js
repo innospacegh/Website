@@ -32,6 +32,23 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-plugin-webfonts`,
+            options: {
+                fonts: {
+                    google: [
+                        {
+                            family: "Poppins",
+                            variants: ["400", "500", "600"],
+                        },
+                        {
+                            family: "Muli",
+                            variants: ["400", "600", "700"],
+                        },
+                    ],
+                },
+            },
+        },
+        {
             resolve: `gatsby-source-airtable`,
             concurrency: 5,
             options: {

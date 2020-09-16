@@ -44,13 +44,11 @@ const navitems = [
 ]
 
 const NavContainer = styled.div`
-    position: absolute;
     width: 100%;
     height: 64px;
     background-color: white;
     display: flex;
     align-items: center;
-    top: 0;
     @media (max-width: ${breakpoint}) {
         position: fixed;
     }

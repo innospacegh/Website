@@ -1,6 +1,5 @@
 import React, { useRef } from "react"
 import { graphql, StaticQuery } from "gatsby"
-import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,8 +7,6 @@ import Hero from "../components/Hero/Hero"
 import Spaces from "../components/Spaces/Spaces"
 import ContactUs from "../components/ContactUs/ContactUs"
 import Map from "../components/Map/Map"
-
-// import heroBg from "../assets/images/Coworking-Office-Space-01.jpg"
 
 const HeaderWithBg: React.FC = ({ children }) => (
     <StaticQuery
@@ -27,7 +24,7 @@ const HeaderWithBg: React.FC = ({ children }) => (
             }
         `}
         render={data => {
-            // Set ImageData.
+            // Set Image Data
             const backgroundFluidImageStack = [
                 data.desktop.childImageSharp.fluid,
                 `linear-gradient(
@@ -35,7 +32,6 @@ const HeaderWithBg: React.FC = ({ children }) => (
                     hsla(0, 0%, 10%, 0.9)
                 )`,
             ].reverse()
-            // const imageData = data.desktop.childImageSharp.fluid
             return (
                 <BackgroundImage
                     fluid={backgroundFluidImageStack}

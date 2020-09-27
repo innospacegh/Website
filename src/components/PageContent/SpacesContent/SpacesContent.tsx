@@ -10,6 +10,7 @@ const SpaceSection = styled.section``
 const SpacesContainer = styled(InnerContainer)`
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 `
 
 const SpacesContent: React.FC = () => {
@@ -35,7 +36,7 @@ const SpacesContent: React.FC = () => {
     return (
         <SpaceSection>
             <SpacesContainer>
-            {spacesData.allAirtable.nodes.map(data => (
+                {spacesData.allAirtable.nodes.map(data => (
                     <Space
                         key={data.id}
                         space={data.data.Space}

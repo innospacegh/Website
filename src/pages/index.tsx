@@ -53,21 +53,6 @@ const HeaderWithBg: React.FC = ({ children }) => (
     />
 )
 
-// const Header = styled(HeaderWithBg)`
-//     height: 780px;
-//     background-image: linear-gradient(
-//             hsla(0, 0%, 10%, 0.9),
-//             hsla(0, 0%, 10%, 0.9)
-//         ),
-//         url(${heroBg});
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// `
-
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
 
 const IndexPage: React.FC = () => {

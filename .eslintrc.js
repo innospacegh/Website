@@ -32,8 +32,8 @@ module.exports = {
     rules: {
         // Disable prop-types as we use TypeScript for type checking
         "react/prop-types": "off",
-        "@typescript-eslint/explicit-function-return-type": "warn",
-        "@typescript-eslint/explicit-module-boundary-types": "warn",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
         // Enable prettier rules
         "prettier/prettier": "error",
         // interface start with capital I

@@ -52,6 +52,7 @@ const NavContainer = styled.div`
     align-items: center;
     @media (max-width: ${breakpoint}) {
         position: fixed;
+        top: 0;
     }
 `
 

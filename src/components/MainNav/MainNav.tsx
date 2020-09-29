@@ -7,16 +7,16 @@ const breakpoint = "860px"
 
 type DisplayType = "default" | "opened" | "closed"
 
-interface NavButtonProps {
+type NavButtonProps = {
     toggle: () => void
     toggled: DisplayType
 }
 
-interface MenuButtonProps {
+type MenuButtonProps = {
     toggled: DisplayType
 }
 
-interface NavListProps {
+type NavListProps = {
     display: DisplayType
 }
 

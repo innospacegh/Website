@@ -9,7 +9,7 @@ import MembershipContent from "../PageContent/MembershipContent/MembershipConten
 import AboutContent from "../PageContent/AboutContent/AboutContent"
 import ContactContent from "../PageContent/ContactContent/ContactContent"
 
-interface PageTemplateProps {
+type PageTemplateProps = {
     pageContext?: any
 }
 

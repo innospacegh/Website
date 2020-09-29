@@ -2,7 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 import { SubHeading } from "../../Headings/Headings"
 
-interface SpaceProps {
+type SpaceProps = {
     space: string
     description: string
     image: string

@@ -1,3 +1,5 @@
+//Comment for rebuild
+
 const colors = {
     PRIMARY: "#1C2E36",
     SECONDARY: "#25BCCA",

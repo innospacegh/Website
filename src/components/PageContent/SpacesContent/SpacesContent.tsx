@@ -42,8 +42,8 @@ const SpacesContent: React.FC = () => {
     return (
         <SpaceSection>
             <SpaceDescription>
-                We offer various affordable and spaces for you specific needs
-                with flexible requirements in a serene environment.
+                We offer various affordable and flexible spaces for you specific
+                needs with flexible requirements in a serene environment.
             </SpaceDescription>
             <SpacesContainer>
                 {spacesData.allAirtable.nodes.map(data => (

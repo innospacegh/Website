@@ -19,6 +19,11 @@ const SpaceHeading = styled(SectionHeading)`
     color: hsl(0, 0%, 20%);
 `
 
+const SpaceDescription = styled.p`
+    text-align: center;
+    margin-bottom: 2rem;
+`
+
 const SpacesContainer = styled(InnerContainer)`
     display: flex;
     justify-content: space-around;
@@ -49,6 +54,10 @@ const Spaces: React.FC = () => {
     return (
         <SpacesSection>
             <SpaceHeading>Our Spaces</SpaceHeading>
+            <SpaceDescription>
+                We offer various affordable and spaces for you specific needs
+                with flexible requirements in a serene environment.
+            </SpaceDescription>
             <SpacesContainer>
                 {spacesData.allAirtable.nodes.map(data => (
                     <Space

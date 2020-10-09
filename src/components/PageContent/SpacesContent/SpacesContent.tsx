@@ -13,6 +13,12 @@ const SpacesContainer = styled(InnerContainer)`
     flex-wrap: wrap;
 `
 
+const SpaceDescription = styled.p`
+    text-align: center;
+    max-width: 500px;
+    margin: 2rem auto 1.5rem auto;
+`
+
 const SpacesContent: React.FC = () => {
     const spacesData = useStaticQuery(
         graphql`
@@ -35,6 +41,10 @@ const SpacesContent: React.FC = () => {
 
     return (
         <SpaceSection>
+            <SpaceDescription>
+                We offer various affordable and spaces for you specific needs
+                with flexible requirements in a serene environment.
+            </SpaceDescription>
             <SpacesContainer>
                 {spacesData.allAirtable.nodes.map(data => (
                     <Space

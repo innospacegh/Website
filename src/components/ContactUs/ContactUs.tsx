@@ -19,6 +19,11 @@ const ContactHeading = styled(SectionHeading)`
     color: hsl(249.3, 88%, 10%);
 `
 
+const ContactDescription = styled.p`
+    text-align: center;
+    margin-bottom: 2rem;
+`
+
 const ContactContent = styled.div`
     /* display: flex;
     align-items: center;
@@ -46,6 +51,9 @@ const ContactUs: React.FC = () => {
         <ContactSection>
             <ContactContainer>
                 <ContactHeading>Contact Us</ContactHeading>
+                <ContactDescription>
+                    We are open 8am to 6pm on weekdays.
+                </ContactDescription>
                 <ContactDetails />
                 <ContactContent>
                     <ContactImage>

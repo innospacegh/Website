@@ -13,9 +13,7 @@ type PageTemplateProps = {
     pageContext?: any
 }
 
-const Main = styled.main`
-    margin-top: 64px;
-`
+const Main = styled.main``
 
 const PageTemplate: React.FC<PageTemplateProps> = ({
     pageContext,

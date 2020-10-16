@@ -31,7 +31,7 @@ const HeroHeading = styled.h1`
     }
 `
 
-const HeroSubtitle = styled.p`
+const HeroSubtitle = styled.h2`
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;

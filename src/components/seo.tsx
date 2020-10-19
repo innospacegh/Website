@@ -13,14 +13,14 @@ type SEOProps = {
     description?: string
     lang?: string
     meta?: Array<any>
-    title: string
+    title?: string
 }
 
 const SEO: React.FC<SEOProps> = ({
     description = "",
     lang = "en",
     meta = [],
-    title,
+    title = "",
 }: SEOProps) => {
     const { site } = useStaticQuery(
         graphql`
@@ -44,7 +44,7 @@ const SEO: React.FC<SEOProps> = ({
                 lang,
             }}
             title={title}
-            titleTemplate={`%s | ${site.siteMetadata.title}`}
+            titleTemplate={`${site.siteMetadata.title} | %s`}
             meta={[
                 {
                     name: `description`,

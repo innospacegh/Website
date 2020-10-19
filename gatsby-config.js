@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
     siteMetadata: {
         title: `InnoSpace - Coworking Space in Tema`,
-        description: `Coworking Space, in Tema`,
+        description: `Coworking Space and private offices in Tema`,
         author: `Daniel Addae`,
     },
     plugins: [

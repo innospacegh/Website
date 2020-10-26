@@ -61,7 +61,7 @@ const MembershipContent: React.FC = () => {
             query {
                 openDesk: allAirtable(
                     filter: { table: { eq: "Open Desk" } }
-                    sort: { fields: data___Categories, order: ASC }
+                    sort: { fields: data___Cost, order: ASC }
                 ) {
                     nodes {
                         id

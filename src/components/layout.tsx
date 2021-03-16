@@ -22,11 +22,7 @@ const Main = styled.main`
     scroll-behavior: smooth;
 `
 
-type LayoutProps = {
-    children: React.ReactNode
-}
-
-const Layout: React.FC = ({ children }: LayoutProps) => {
+const Layout: React.FC = ({ children }) => {
     return (
         <ThemeProvider theme={theme}>
             <>
